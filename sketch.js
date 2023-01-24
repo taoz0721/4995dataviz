@@ -16,7 +16,7 @@ function draw() {
     fill(72, 201, 176 );
     arc(400, 300, 800, 600, 3/2*PI, 2*PI*(hr%12)/12+3/2*PI);
     if (hr>12){
-        fill("gray");
+        fill("black");
     }else{
         fill("white");
     }
