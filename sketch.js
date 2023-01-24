@@ -15,7 +15,11 @@ function draw() {
     ellipse(400, 300, 800, 600); // Outer white ellipse
     fill(72, 201, 176 );
     arc(400, 300, 800, 600, 3/2*PI, 2*PI*(hr%12)/12+3/2*PI);
-    fill(225);
+    if (hr>12){
+        fill("gray");
+    }else{
+        fill("white");
+    }
     ellipse(400, 300, 600, 400);
     
     let y = map(min, 0, 59, 0, 200);
